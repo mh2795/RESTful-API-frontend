@@ -1,5 +1,5 @@
 # NBA Players Full Stack Application
-Mustafa Hassan
+#### By Mustafa Hassan
 
 This project was developed using the MERN stack and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -12,6 +12,10 @@ To run this app locally:
 - Run `npm start` to launch the app in your browser
 
 ## Snapshot
+
+![Home](./src/images/Home.png)
+![Create-Player](./src/images/Create.png)
+![Edit-Player](./src/images/Edit.png)
 
 ## Technologies Used
 
