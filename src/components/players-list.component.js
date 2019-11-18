@@ -14,6 +14,7 @@ const Player = props => (
   </tr>
 )
 
+
 export default class PlayersList extends Component {
   constructor(props) {
     super(props);
