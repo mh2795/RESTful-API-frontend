@@ -49,7 +49,7 @@ export default class CreatePlayer extends Component {
     axios.post('https://nba-api-mh.herokuapp.com/', player)
       .then(res => console.log(res.data));
 
-    window.location = '/';
+    setInterval(function(){ window.location = '/'}, 1000);
   }
 
   render() {

@@ -23,7 +23,7 @@ export default class EditPlayer extends Component {
         this.setState({
           firstName: response.data.firstName,
           lastName: response.data.lastName,
-          position: response.data.position,
+          pos: response.data.pos,
         })
       })
       .catch(function (error) {
@@ -60,11 +60,11 @@ export default class EditPlayer extends Component {
 
     console.log(player);
 
-    axios.post('https://nba-api-mh.herokuapp.com/' + this.props.match.params.id, player)
+    axios.put('https://nba-api-mh.herokuapp.com/' + this.props.match.params.id, player)
       .then(res => console.log(res.data));
 
-    window.location = '/';
-  }
+      setInterval(function(){ window.location = '/'}, 1000);
+    }
 
   render() {
     return (
@@ -94,7 +94,7 @@ export default class EditPlayer extends Component {
           <input 
               type="text" 
               className="form-control"
-              value={this.state.position}
+              value={this.state.pos}
               onChange={this.onChangePosition}
               />
         </div>
